@@ -40,22 +40,26 @@ Styles for buttons
 **********************/
 
 [class*=label__]{
-  padding-right: 20px;
-  color:#FFF;
+  //padding-right: 20px;
+  color:$color2;
   font-family:$login_info;
   font-size: 1.3em;
+  line-height: 4;
 }
+
 [class*=input__]{
-  margin-right: 20px;
 }
+
 .button_login{
   font-family:$login_info;
-  font-size: 0.9em;
+  font-size: 1.3em;
   color:#FFF;
   padding: 5px 15px;
   outline: none;
-  background: rgba(#333,.6);
+  background: rgba($color2,.8);
   border-color: $color2;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 
@@ -65,19 +69,59 @@ Styles for buttons
 Styles for Header
 **********************/
 .main-header{
-  width: 100%;
-  height: 70px;
-  background-color: $color2;
-  display: flex;
-  justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: $color2;
+    //display: flex;
+    //justify-content: space-around;
 
-  &__logo, &__login{
-    line-height: 70px;
-  }
-  .main-title{
-    font-family: $main-title;
-    font-size:2.5em;
-    color:#005050;
-  }
+    &__logo{
+      line-height: 70px;
+    }
+    .main-title{
+      font-family: $main-title;
+      font-size:2.5em;
+      color:#005050;
+    }
+
+    &__login{
+      width: 80%;
+      border: 2px solid $color1;
+      padding: 15px;
+      margin: 5.5em auto;
+      display:flex;
+      flex-direction:column;
+    }
+      &__forgot,&__register{
+        text-decoration: none;
+        color:$color2;
+        margin-top: 30px;
+      }
 
 }
+
+/**********************
+Styles for Register
+**********************/
+.main{
+  margin-top: 100vh;
+  width: 100%;
+
+  &-subtitle{
+    text-align: center;
+    color:$color2;
+    margin-bottom:2.5em;
+    padding-top: 50px;
+  }
+
+  &-register{
+    width: 80%;
+    border: 2px solid $color1;
+    padding: 15px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+/* @media 480px*/

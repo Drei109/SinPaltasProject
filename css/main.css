@@ -26,22 +26,21 @@ img {
 Styles for buttons
 **********************/
 [class*=label__] {
-  padding-right: 20px;
-  color: #FFF;
+  color: steelblue;
   font-family: "Lobster", cursive;
-  font-size: 1.3em; }
-
-[class*=input__] {
-  margin-right: 20px; }
+  font-size: 1.3em;
+  line-height: 4; }
 
 .button_login {
   font-family: "Lobster", cursive;
-  font-size: 0.9em;
+  font-size: 1.3em;
   color: #FFF;
   padding: 5px 15px;
   outline: none;
-  background: rgba(51, 51, 51, 0.6);
-  border-color: steelblue; }
+  background: rgba(70, 130, 180, 0.8);
+  border-color: steelblue;
+  margin-top: 30px;
+  cursor: pointer; }
 
 /**********************
 Styles for Header
@@ -49,17 +48,56 @@ Styles for Header
 .main-header {
   width: 100%;
   height: 70px;
-  background-color: steelblue;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-  .main-header__logo, .main-header__login {
+  background-color: steelblue; }
+  .main-header__logo {
     line-height: 70px; }
   .main-header .main-title {
     font-family: "Pacifico", cursive;
     font-size: 2.5em;
     color: #005050; }
+  .main-header__login {
+    width: 80%;
+    border: 2px solid teal;
+    padding: 15px;
+    margin: 5.5em auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .main-header__forgot, .main-header__register {
+    text-decoration: none;
+    color: steelblue;
+    margin-top: 30px; }
+
+/**********************
+Styles for Register
+**********************/
+.main {
+  margin-top: 100vh;
+  width: 100%; }
+  .main-subtitle {
+    text-align: center;
+    color: steelblue;
+    margin-bottom: 2.5em;
+    padding-top: 50px; }
+  .main-register {
+    width: 80%;
+    border: 2px solid teal;
+    padding: 15px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+/* @media 480px*/

@@ -14,28 +14,47 @@
             <h1 class="main-title">Sin Paltas</h1>
         </div>
 
-        <div class="main-header__login">
-            <label for="email" class="label__email">E-mail: </label>
-            <input type="email" placeholder="example@hotmail.com" id="email" required class="input__email">
-            <label for="password" class="label__password">Password: </label>
-            <input type="password" placeholder="Password" id="password" required class="input__password">
-            <button type="submit" name="enviar" class="button_login">Login</button>
-        </div>
+        <form action="login.php" method="post" class="main-header__login">
+
+          <label for="email" class="label__email">E-mail: </label>
+          <input type="email" placeholder="example@hotmail.com" id="email" requiredclass="input__email">
+            <!---->
+          <label for="password" class="label__password">Password: </label>
+          <input type="password" placeholder="Password" id="password" requiredclass="input__password">
+            <!---->
+          <button type="submit" name="enviar" class="button_login">Login</button>
+            <!---->
+            <a href="#" class="main-header__forgot">Perdiste tu contraseña?</a>
+            <a href="#register" class="main-header__register">Registrate.</a>
+
+        </form>
 
     </header>
 
-    <main class="main">
+    <main class="main"><a name="register"></a>
 
-        <section class="main-register">
-            <h2>Registrate</h2>
-            <form action="registrar.php">
-                <label for="email_register" class="register_label">E-mail: </label>
-                <input type="email" placeholder="example@hotmail.com" id="email_register" required class="register_input">
-                <label for="password_register" class="register_label">Password: </label>
-                <input type="password" placeholder="Password" id="password_register" required class="register_password">
-                <button type="submit" name="enviar">Login</button>
-            </form>
-        </section>
+        <h2 class="main-subtitle">Registrate</h2>
+
+        <form action="registrar.php" method="post" class="main-register">
+
+            <label for="name_register" class="label__name--register">Nombre: </label>
+            <input type="text" placeholder="Nombre" id="name_register" required class="register_input">
+            <!---->
+            <label for="lastname_register" class="label__lastname">Apellido: </label>
+            <input type="text" placeholder="Apellido" id="lastname_register" required class="register_input">
+            <!---->
+            <label for="password_register" class="label__password--register">Password: </label>
+            <input type="password" placeholder="Password" id="password_register" required class="register_password">
+            <!---->
+            <label for="address_register" class="label__address">Dirección: </label>
+            <input type="text" placeholder="Dirección" id="address_register" required class="register_input">
+            <!---->
+            <label for="phone_register" class="label__phone">Telefono: </label>
+            <input type="tel" placeholder="945 654321" id="phone_register" required class="phone_password">
+            <!---->
+            <button type="submit" name="enviar" class="button_login">Registrar</button>
+
+        </form>
 
     </main>
 
