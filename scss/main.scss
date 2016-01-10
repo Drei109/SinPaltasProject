@@ -86,7 +86,7 @@ Styles for Header
 
     &__login{
       width: 80%;
-      border: 2px solid $color1;
+      border: 2px solid black;
       padding: 15px;
       margin: 5.5em auto;
       display:flex;
@@ -125,4 +125,4 @@ Styles for Register
 }
 
 /* @media 480px*/
- @import "components/base"
+ @import "components/base";
