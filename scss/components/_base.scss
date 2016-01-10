@@ -1,3 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+//colors
+$color1:  #34B553;
+$color2:  #71F79F;
+$color3:  #1282A2;
+$white:   #FEFCFB;
+$black:   #2A2D34;
+
+// Fonts
+$font-title: 'Pacifico', cursive;
+$font_subtitle: 'Lobster', cursive;
+$font-text:'Roboto', sans-serif;
+
+
+/****************
+*****************
+
+Basic Reset
+
+
+*****************
+*****************/
+*:before,
+*:after{
+  box-sizing: border-box;
+}
 body{
-   
+  margin: 0;
+  padding: 0;
+  font-family: $font_text;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-family: $font-title;
+}
+img{
+  max-width: 100%;
+}
+input,label,textarea,button{
+  display: block;
+}
+a{
+  text-decoration: none;
 }

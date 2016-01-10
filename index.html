@@ -8,55 +8,80 @@
 </head>
 <body>
 
+    <!--Container for Header-->
+    <!---->
+
     <header class="main-header">
 
         <div class="main-header__logo">
-            <h1 class="main-title">Sin Paltas</h1>
+            <h1 class="main-header-title">Sin Paltas</h1>
         </div>
-
-        <form action="login.php" method="post" class="main-header__login">
-
-          <label for="email" class="label__email">E-mail: </label>
-          <input type="email" placeholder="example@hotmail.com" id="email" requiredclass="input__email">
-            <!---->
-          <label for="password" class="label__password">Password: </label>
-          <input type="password" placeholder="Password" id="password" requiredclass="input__password">
-            <!---->
-          <button type="submit" name="enviar" class="button_login">Login</button>
-            <!---->
-            <a href="#" class="main-header__forgot">Perdiste tu contraseña?</a>
-            <a href="#register" class="main-header__register">Registrate.</a>
-
-        </form>
 
     </header>
 
-    <main class="main"><a name="register"></a>
+     <!--Container for Login-->
+    <!---->
 
-        <h2 class="main-subtitle">Registrate</h2>
+    <section class="container-login">
 
-        <form action="registrar.php" method="post" class="main-register">
+        <h2 class="container-login-subtitle">Ingresa</h2>
 
-            <label for="name_register" class="label__name--register">Nombre: </label>
-            <input type="text" placeholder="Nombre" id="name_register" required class="register_input">
-            <!---->
-            <label for="lastname_register" class="label__lastname">Apellido: </label>
-            <input type="text" placeholder="Apellido" id="lastname_register" required class="register_input">
-            <!---->
-            <label for="password_register" class="label__password--register">Password: </label>
-            <input type="password" placeholder="Password" id="password_register" required class="register_password">
-            <!---->
-            <label for="address_register" class="label__address">Dirección: </label>
-            <input type="text" placeholder="Dirección" id="address_register" required class="register_input">
-            <!---->
-            <label for="phone_register" class="label__phone">Telefono: </label>
-            <input type="tel" placeholder="945 654321" id="phone_register" required class="phone_password">
-            <!---->
-            <button type="submit" name="enviar" class="button_login">Registrar</button>
+        <div class="container-login-form">
 
-        </form>
+            <form action="login.php" method="post" class="main-header__login">
 
-    </main>
+                <label for="email" class="label__email">E-mail: </label>
+                <input type="email" placeholder="example@hotmail.com" id="email" required class="input__email">
+                <!---->
+                <label for="password" class="label__password">Password: </label>
+                <input type="password" placeholder="Password" id="password" required class="input__password">
+                <!---->
+                <button type="submit" name="enviar" class="button__login">Login</button>
+                <!---->
+                <a href="#" class="main-header__forgot">Perdiste tu contraseña?</a>
+                <a href="#register" class="main-header__register">Registrate.</a>
+
+            </form>
+
+        </div>
+
+        <div class="container-login-logo">
+            <img src="" alt="Logo Principal">
+        </div>
+
+    </section>
+
+    <!-- Container for Register -->
+    <!---->
+
+    <section class="container-register"><a name="register"></a>
+
+        <h2 class="container-register-subtitle">Registrate</h2>
+
+        <div class="container-login-form">
+            <form action="registrar.php" method="post" class="main-register">
+
+                <label for="name_register" class="label__name--register">Nombre: </label>
+                <input type="text" placeholder="Nombre" id="name_register" required class="input__name_register">
+                <!---->
+                <label for="lastname_register" class="label__lastname">Apellido: </label>
+                <input type="text" placeholder="Apellido" id="lastname_register" required class="input__lastname_register">
+                <!---->
+                <label for="password_register" class="label__password--register">Password: </label>
+                <input type="password" placeholder="Password" id="password_register" required class="input__password_register">
+                <!---->
+                <label for="address_register" class="label__address">Dirección: </label>
+                <input type="text" placeholder="Dirección" id="address_register" required class="input__address_register">
+                <!---->
+                <label for="phone_register" class="label__phone">Telefono: </label>
+                <input type="tel" placeholder="945 654321" id="phone_register" required class="input__phone_register">
+                <!---->
+                <button type="submit" name="enviar" class="button__register">Registrar</button>
+
+            </form>
+        </div>
+
+    </section>
 
 
 </body>
