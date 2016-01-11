@@ -52,11 +52,11 @@ a {
   .container-login-subtitle, .container-register-subtitle {
     margin: 0 0 1em 8px; }
   .container-login-form, .container-register-form {
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 1.5em .8px;
+    padding: 1.5em 0px;
     border: 2px solid #34B553;
-    margin-bottom: 1em; }
+    margin: 0 auto 1em; }
     .container-login-form a, .container-register-form a {
       margin: 0 2em 0 5px;
       padding-top: 30px;
@@ -78,7 +78,7 @@ a {
   line-height: 2; }
 
 [class*=input__] {
-  padding-right: 80px;
+  padding-right: 50px;
   padding-top: 5px; }
 
 [class*=button__] {

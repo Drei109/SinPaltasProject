@@ -24,12 +24,13 @@
       //background: coral;
     }
     &-form{
-      width: 100%;
+      width: 90%;
       height:auto;
       //background: red;
-      padding: 1.5em .8px;
+      padding: 1.5em 0px;
       border: 2px solid $color1;
-      margin-bottom:1em;
+      margin: 0 auto 1em;
+      //margin-bottom:1em;
 
       a{
         margin:0 2em 0 5px;
@@ -60,7 +61,7 @@
 }
 
 [class*=input__]{
-  padding-right: 80px;
+  padding-right: 50px;
   padding-top: 5px;
 }
 [class*=button__]{
