@@ -94,30 +94,31 @@
    //background: khaki;
  }
 /* @media 480px*/
- @media screen and (min-width: 480px) {
+ @media screen and (min-width: 768px) {
    .container-register{
      background: teal;
    }
   .container-login{
     display: flex;
-    background: teal;
+    //background: teal;
      &__info{
        width: 485px;
      }
 
     &-logo{
-      display: block;
+      display: flex;
       //background: coral;
-      width: 50%;
-      padding:0 5px;
-      margin-left: auto;
-      margin-right:auto;
+      width: 30%;
+      height: 30%;
+      //padding: 5% 0;
+      //padding:0 5px;
+      margin:auto;
 
       &__secundary{
-        display: flex;
-        height: 50%;
-        margin:auto;
-        transform: translateY(8%);
+        //padding: 10% 0;
+        //height: 50%;
+        //margin:auto;
+        //transform: translateY(8%);
         background: lightcyan;
       }
     }

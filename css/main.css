@@ -99,33 +99,25 @@ a {
   display: none; }
 
 /* @media 480px*/
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .container-register {
     background: teal; }
   .container-login {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    background: teal; }
+    display: flex; }
     .container-login__info {
       width: 485px; }
     .container-login-logo {
-      display: block;
-      width: 50%;
-      padding: 0 5px;
-      margin-left: auto;
-      margin-right: auto; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 30%;
+      height: 30%;
+      margin: auto; }
       .container-login-logo__secundary {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 50%;
-        margin: auto;
-        -webkit-transform: translateY(8%);
-            -ms-transform: translateY(8%);
-                transform: translateY(8%);
         background: lightcyan; }
   [class*=input__] {
     padding-right: 2%;
