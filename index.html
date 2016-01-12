@@ -24,29 +24,33 @@
 
     <section class="container-login">
 
-        <h2 class="container-login-subtitle">Ingresa</h2>
+        <div class="container-login__info">
 
-        <div class="container-login-form">
+            <h2 class="container-login-subtitle">Ingresa</h2>
 
-            <form action="login.php" method="post" class="main-header__login">
+            <div class="container-login-form">
 
-                <label for="email" class="label__email">E-mail: </label>
-                <input type="email" placeholder="example@hotmail.com" id="email" required class="input__email">
-                <!---->
-                <label for="password" class="label__password">Password: </label>
-                <input type="password" placeholder="Password" id="password" required class="input__password">
-                <!---->
-                <button type="submit" name="enviar" class="button__login">Login</button>
-                <!---->
-                <a href="#" class="main-header__forgot">Perdiste tu contraseña?</a>
-                <a href="#register" class="main-header__register">Registrate.</a>
+                <form action="login.php" method="post" class="main-header__login">
 
-            </form>
+                    <label for="email" class="label__email">E-mail: </label>
+                    <input type="email" placeholder="example@hotmail.com" id="email" required class="input__email">
+                    <!---->
+                    <label for="password" class="label__password">Password: </label>
+                    <input type="password" placeholder="Password" id="password" required class="input__password">
+                    <!---->
+                    <button type="submit" name="enviar" class="button__login">Login</button>
+                    <!---->
+                    <a href="#" class="main-header-link__forgot">Perdiste tu contraseña?</a>
+                    <a href="#register" class="main-header-link__register">Registrate.</a>
+
+                </form>
+
+            </div>
 
         </div>
 
         <div class="container-login-logo">
-            <img src="" alt="Logo Principal">
+            <img class="container-login-logo__secundary" src="http://www.ironpaper.com/webintel/wp-content/uploads/2013/11/code2-400x400.png" alt="Logo Principal">
         </div>
 
     </section>

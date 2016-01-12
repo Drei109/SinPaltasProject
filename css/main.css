@@ -9,9 +9,6 @@ Basic Reset
 
 *****************
 *****************/
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 *:before,
 *:after {
   box-sizing: border-box; }
@@ -43,6 +40,13 @@ a {
     vertical-align: middle;
     text-align: center;
     font-size: 2.2em; }
+  .main-header-link__forgot, .main-header-link__register {
+    display: block;
+    margin: 2em 2em 20px 5px;
+    color: #1282A2; }
+
+[class^=main-header-link__]:hover {
+  color: #34B553; }
 
 .container-login, .container-register {
   width: 95%;
@@ -54,21 +58,19 @@ a {
   .container-login-form, .container-register-form {
     width: 90%;
     height: auto;
-    padding: 1.5em 0px;
+    padding: 1.5em 0;
     border: 2px solid #34B553;
     margin: 0 auto 1em; }
-    .container-login-form a, .container-register-form a {
-      margin: 0 2em 0 5px;
-      padding-top: 30px;
-      color: #1282A2; }
-    .container-login-form a:hover, .container-register-form a:hover {
-      color: #34B553; }
   .container-login-logo, .container-register-logo {
     width: 100%; }
+
+.container-register-subtitle {
+  margin-top: 4em; }
 
 [class*=label__],
 [class*=input__],
 [class*=button__] {
+  display: block;
   margin: 0 0 8px 5px; }
 
 [class*=label__] {
@@ -93,33 +95,39 @@ a {
   [class*=button__]:hover {
     background: #169fc7; }
 
+.container-login-logo {
+  display: none; }
+
 /* @media 480px*/
-/****************
-*****************
-
-Basic Reset
-
-
-*****************
-*****************/
-*:before,
-*:after {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-family: "Pacifico", cursive; }
-
-img {
-  max-width: 100%; }
-
-input, label, textarea, button {
-  display: block; }
-
-a {
-  text-decoration: none; }
+@media screen and (min-width: 480px) {
+  .container-register {
+    background: teal; }
+  .container-login {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: teal; }
+    .container-login__info {
+      width: 485px; }
+    .container-login-logo {
+      display: block;
+      width: 50%;
+      padding: 0 5px;
+      margin-left: auto;
+      margin-right: auto; }
+      .container-login-logo__secundary {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 50%;
+        margin: auto;
+        -webkit-transform: translateY(8%);
+            -ms-transform: translateY(8%);
+                transform: translateY(8%);
+        background: lightcyan; }
+  [class*=input__] {
+    padding-right: 2%;
+    margin-right: 3em;
+    padding-top: 5px; } }

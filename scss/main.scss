@@ -11,7 +11,19 @@
       text-align: center;
       font-size: 2.2em;
     }
+
+    &-link__forgot,
+    &-link__register{
+      display: block;
+      margin:2em 2em 20px 5px;
+      color:$color3;
+    }
+
 }
+ [class^=main-header-link__]:hover{
+   color: $color1;
+ }
+
 .container-login,.container-register{
   width: 95%;
   //background: $color3;
@@ -27,28 +39,25 @@
       width: 90%;
       height:auto;
       //background: red;
-      padding: 1.5em 0px;
+      padding: 1.5em 0;
       border: 2px solid $color1;
       margin: 0 auto 1em;
       //margin-bottom:1em;
-
-      a{
-        margin:0 2em 0 5px;
-        padding-top: 30px;
-        color:$color3;
-      }
-      a:hover{
-        color: $color1;
-      }
     }
 
     &-logo{
       width: 100%;
     }
 }
+
+.container-register-subtitle{
+  margin-top: 4em;
+}
+
 [class*=label__],
 [class*=input__],
 [class*=button__]{
+  display: block;
   margin: 0 0 8px 5px;
   //background: coral;
 }
@@ -78,5 +87,45 @@
   }
 }
 
+ .container-login-logo{
+   display: none;
+ }
+ .container-register__info{
+   //background: khaki;
+ }
 /* @media 480px*/
- @import "components/base";
+ @media screen and (min-width: 480px) {
+   .container-register{
+     background: teal;
+   }
+  .container-login{
+    display: flex;
+    background: teal;
+     &__info{
+       width: 485px;
+     }
+
+    &-logo{
+      display: block;
+      //background: coral;
+      width: 50%;
+      padding:0 5px;
+      margin-left: auto;
+      margin-right:auto;
+
+      &__secundary{
+        display: flex;
+        height: 50%;
+        margin:auto;
+        transform: translateY(8%);
+        background: lightcyan;
+      }
+    }
+  }
+   [class*=input__]{
+     padding-right: 2%;
+     margin-right: 3em;
+     padding-top: 5px;
+   }
+
+}
