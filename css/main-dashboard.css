@@ -9,6 +9,9 @@ Basic Reset
 
 *****************
 *****************/
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 *:before,
 *:after {
   box-sizing: border-box; }
@@ -31,9 +34,55 @@ input, label, textarea, button {
 a {
   text-decoration: none; }
 
+/****************
+*****************
+
+Basic Reset
+
+
+*****************
+*****************/
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Pacifico", cursive; }
+
+img {
+  max-width: 100%; }
+
+input, label, textarea, button {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+.comunidades {
+  padding: 0;
+  margin: 0;
+  background: #242a37;
+  width: 150px;
+  height: 593px;
+  text-align: center; }
+  .comunidades__items {
+    height: 90px; }
+    .comunidades__items .comunidades__icon {
+      display: block;
+      line-height: 50px; }
+    .comunidades__items .comunidades__link {
+      text-decoration: none;
+      color: #FEFCFB; }
+
 .header {
   color: #FEFCFB;
-  background: rgba(42, 45, 52, 0.9);
+  background: #1c202b;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
