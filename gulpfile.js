@@ -29,8 +29,11 @@ gulp.task('sass', function () {
 gulp.task('default', function() {
 
     browserSync.init({
-        server: "./"
+        server: {
+            baseDir: "./"
+        }
     });
+
 
     gulp.watch("./scss/**/*.scss", ['sass']);
     gulp.watch("./*.html").on('change', browserSync.reload);

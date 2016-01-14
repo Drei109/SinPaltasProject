@@ -1,7 +1,6 @@
 {
   "name": "sinpaltas-project",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,14 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drei109/SinPaltasProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Drei109/SinPaltasProject/issues"
+  },
+  "homepage": "https://github.com/Drei109/SinPaltasProject#readme",
+  "description": ""
 }
