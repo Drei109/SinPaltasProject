@@ -14,7 +14,18 @@ $font-title: 'Pacifico', cursive;
 $font_subtitle: 'Lobster', cursive;
 $font-text:'Roboto', sans-serif;
 
+//Mixin para media query
+@mixin desde($size){
+  @media screen and (min-width: $size){
+    @content;
+  }
+}
 
+//puntos de quiebre
+$pequeño  : 480px;
+$mediado  : 768px;
+$grande   : 1025px;
+$s-grande : 1400px;
 /****************
 *****************
 
