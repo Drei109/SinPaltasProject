@@ -1,15 +1,23 @@
-/**
- * Created by enzo_ on 07/01/2016.
- */
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var reload = browserSync.reload;
 
+gulp.task('browser-sync', function () {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
 
-gulp.task('sass', function () {
-    gulp.src('./scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+gulp.task('watch', function () {
+    gulp.watch("css/*.css", ['autoprefixer']);
+    gulp.watch('./*.html').on("change", reload);
+});
+
+gulp.task('autoprefixer', function () {
+    return gulp.src('css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 5 versions','> 1%',
                 'ie 8',
@@ -18,23 +26,10 @@ gulp.task('sass', function () {
                 'android 4'],
             cascade: true
         }))
-        .pipe(gulp.dest('./css'))
-        .pipe(browserSync.reload({
+        .pipe(gulp.dest('css'))
+        .pipe(reload({
             stream: true
-        }));
+        }))
 });
 
-
-
-gulp.task('default', function() {
-
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-
-
-    gulp.watch("./scss/**/*.scss", ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
-});
+gulp.task('default', ['watch', 'browser-sync']);
