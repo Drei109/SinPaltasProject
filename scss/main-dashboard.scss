@@ -1,6 +1,6 @@
 @import "components/base";
 @import "components/_dashboard-vertical-menu";
-
+@import "components/_gossips.scss";
 
 body{
   padding-bottom: 50em;
@@ -15,6 +15,7 @@ body{
 }
 .header{
   position: fixed;
+  //z-index: 10;
   top: 0;
   right: 0;
   height: 40px;
@@ -60,6 +61,7 @@ body{
 
 .comunidades{
   position: fixed;
+  //z-index: 30;
   top: 42px;
   height: 40px;
   width: 100%;
