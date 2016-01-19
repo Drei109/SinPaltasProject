@@ -1,0 +1,32 @@
+@import url(_base.scss);
+
+.gossips{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  //background: coral;
+  position: relative;
+    z-index: -1;
+    top: 90px;
+    @include desde($pequeño){
+      left: 70px;
+      width: 50%;
+    }
+}
+.gossip__item{
+  background: $color3;
+  width: 92%;
+  margin-left:auto;
+  margin-right:auto;
+
+  height: 40px;
+  text-align: center;
+  padding: .5em;
+  margin-bottom: 1em;
+
+  @include desde($pequeño){
+    width: 90%;
+  }
+}
