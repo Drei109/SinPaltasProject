@@ -1,4 +1,5 @@
-@import url(_base.scss);
+@import "../utils/config";
+@import "../utils/mixins";
 
 .gossips{
   display: flex;
@@ -8,12 +9,12 @@
   padding-top: 1em;
   //background: coral;
   position: relative;
-    z-index: -1;
-    top: 90px;
-    @include desde($pequeño){
-      left: 70px;
-      width: 50%;
-    }
+  z-index: -1;
+  top: 90px;
+  @include desde($pequeño){
+    left: 70px;
+    width: 50%;
+  }
 }
 .gossip__item{
   background: $color3;
