@@ -10,8 +10,7 @@
   "devDependencies": {
     "browser-sync": "^2.11.0",
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.1.1"
+    "gulp-autoprefixer": "^3.1.0"
   },
   "repository": {
     "type": "git",

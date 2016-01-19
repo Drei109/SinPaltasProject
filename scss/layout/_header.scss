@@ -1,10 +1,6 @@
-@import "components/base";
-@import "components/_dashboard-vertical-menu";
+@import "../utils/config";
+@import "../utils/mixins";
 
-
-body{
-  padding-bottom: 50em;
-}
 .l-container{
   //background: coral;
   width: 90%;
@@ -64,9 +60,9 @@ body{
   height: 40px;
   width: 100%;
   background: linear-gradient(
-              $color1,
-              $color2
-              );
+                  $color1,
+                  $color2
+  );
   line-height: 40px;
   transition: .6s;
   @include desde($pequeño){
@@ -76,8 +72,8 @@ body{
     //background: red;
     height: 100vh;
     background: linear-gradient(280deg,
-                    $color1,
-                    $color2
+            $color1,
+            $color2
     );
     .menu-vertical{
       flex-direction: column;
@@ -87,9 +83,8 @@ body{
 }
 
 [class*=icon-]{
-    color: lighten($color3,6%);
+  color: lighten($color3,6%);
 }
 [class*=__link]:focus{
   border-bottom:2px solid $color3;
 }
-

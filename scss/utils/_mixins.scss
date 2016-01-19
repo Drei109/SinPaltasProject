@@ -1,0 +1,13 @@
+// Mixin Media queries
+@mixin desde($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+//Media Queries
+$pequeño: 480px;
+$mediado: 768px;
+$grande: 1025px;
+$s-grande: 1400px;
+
