@@ -1,95 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Horizontal navigation dots - fullPage.js</title>
+    <meta name="author" content="ACC" />
+    <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+    <meta name="Resource-type" content="Document" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>SinPaltas</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                sectionsColor: ['', '#1BBC9B', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            });
+        });
+
+        $(document).ready(function() {
+            $('#aregister').click(function () {
+                $("#login").hide();
+                $("#signup").show();
+                $("#alogin").show();
+                $("#aregister").hide();
+            });
+            $('#alogin').click(function () {
+                $("#login").show();
+                $("#signup").hide();
+                $("#alogin").hide();
+                $("#aregister").show();
+            });
+        });
+
+    </script>
+
+
+
 </head>
 <body>
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="intro">
+            <!--<h1>Navigation dots</h1>-->
 
-    <!--Container for Header-->
-    <!---->
+                <nav><h1>Sin Paltas</h1></nav>
 
-    <header class="main-header">
-
-        <div class="main-header__logo">
-            <h1 class="main-header-title">Sin Paltas</h1>
-        </div>
-
-    </header>
-
-     <!--Container for Login-->
-    <!---->
-
-    <section class="container-login">
-
-        <div class="container-login__info">
-
-            <h2 class="container-login-subtitle">Ingresa</h2>
-
-            <div class="container-login-form">
-
-                <form action="login.php" method="post" class="main-header__login">
-
-                    <label for="email" class="label__email">E-mail: </label>
-                    <input type="email" placeholder="example@hotmail.com" id="email" required class="input__email">
-                    <!---->
-                    <label for="password" class="label__password">Password: </label>
-                    <input type="password" placeholder="Password" id="password" required class="input__password">
-                    <!---->
-                    <button type="submit" name="enviar" class="button__login">Login</button>
-                    <!---->
-                    <a href="#" class="main-header-link__forgot">Perdiste tu contraseña?</a>
-                    <a href="#register" class="main-header-link__register">Registrate.</a>
-
-                </form>
-
+            <div class="logo">
+                <!--<p>Una red social anónima donde podrás compartir tus ideas y pensamientos sin ser juzgado.</p>-->
+                <p>Una red social anónima para todo lo que quieras decir.</p>
+                <img class="log-1" src="images/logo0-01.png" alt="">
+                <!--<p>¡Di lo que piensas y dilo sin Paltas!</p>-->
             </div>
 
+
+            <!--BEWARE-->
+            <section id="login" class="container-login">
+
+                <div class="container-login__info">
+
+                    <h2 class="container-login-subtitle"></h2>
+
+                    <div class="container-login-form">
+
+                        <form action="dashboard.html" method="post" class="main-header__login">
+
+                            <!--<label for="email" class="label__email">E-mail: </label>-->
+                            <input type="email" placeholder="E-mail" id="email" required class="input__email">
+                            <!---->
+                            <!--<label for="password" class="label__password">Password: </label>-->
+                            <input type="password" placeholder="Password" id="password" required class="input__password">
+                            <!---->
+                            <button type="submit" name="enviar" class="button__login">Login</button>
+                            <!---->
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--NOT ANYMORE-->
+            <!--BEWARE AGAIN-->
+            <section id="signup" class="container-register" style="display: none"><a name="register"></a>
+
+                <div class="container-login-form">
+                    <form action="#" method="post" class="main-register">
+
+
+                        <input type="text" placeholder="Nombre de Usuario" id="name_register" required class="input__name_register">
+                        <!---->
+
+                        <input type="text" placeholder="E-mail" id="lastname_register" required class="input__lastname_register">
+                        <!---->
+
+                        <input type="password" placeholder="Password" id="password_register" required class="input__password_register">
+                        <!---->
+
+
+                        <!---->
+                        <button type="submit" name="enviar" class="button__register">Registrar</button>
+
+                    </form>
+                </div>
+
+            </section>
+            <!--K ITS FINE-->
+
+
+            <a href="#" class="main-header-link__forgot">Perdiste tu contraseña?</a>
+            <a href="#" id="aregister" class="main-header-link__register">Registrate.</a>
+            <a href="#" id="alogin" class="main-header-link__register" style="display: none">Ingresa.</a>
+
+
         </div>
+        <!--<img class="log-2" src="images/logo0-01.png" alt="">-->
 
-        <div class="container-login-logo">
-
-            <div class="container-login-logo__secundary">
-                <img class="img" src="http://www.ironpaper.com/webintel/wp-content/uploads/2013/11/code2-400x400.png" alt="Logo Principal">
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1>Introducción</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, architecto distinctio eum harum hic id itaque libero sint temporibus totam! Delectus esse est fugit, inventore ipsam officiis omnis quia tenetur.
+                </p>
             </div>
-
         </div>
-
-    </section>
-
-    <!-- Container for Register -->
-    <!---->
-
-    <section class="container-register"><a name="register"></a>
-
-        <h2 class="container-register-subtitle">Registrate</h2>
-
-        <div class="container-login-form">
-            <form action="registrar.php" method="post" class="main-register">
-
-                <label for="name_register" class="label__name--register">Nombre: </label>
-                <input type="text" placeholder="Nombre" id="name_register" required class="input__name_register">
-                <!---->
-                <label for="lastname_register" class="label__lastname">Apellido: </label>
-                <input type="text" placeholder="Apellido" id="lastname_register" required class="input__lastname_register">
-                <!---->
-                <label for="password_register" class="label__password--register">Password: </label>
-                <input type="password" placeholder="Password" id="password_register" required class="input__password_register">
-                <!---->
-                <label for="address_register" class="label__address">Dirección: </label>
-                <input type="text" placeholder="Dirección" id="address_register" required class="input__address_register">
-                <!---->
-                <label for="phone_register" class="label__phone">Telefono: </label>
-                <input type="tel" placeholder="945 654321" id="phone_register" required class="input__phone_register">
-                <!---->
-                <button type="submit" name="enviar" class="button__register">Registrar</button>
-
-            </form>
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Opciones</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias blanditiis dolore dolorem eius illum impedit inventore, maxime odio officiis, possimus quod velit! Aliquid distinctio enim, odit sint totam ut.
+            </p>
         </div>
-
-    </section>
+    </div>
+</div>
 
 
 </body>
