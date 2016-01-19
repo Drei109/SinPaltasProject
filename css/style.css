@@ -32,6 +32,9 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 * {
   box-sizing: border-box;
 }
@@ -571,4 +574,37 @@ th {
 
 [class*=__link]:focus {
   border-bottom: 2px solid #1282A2;
+}
+
+.gossips {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  position: relative;
+  z-index: -1;
+  top: 90px;
+}
+@media screen and (min-width: 480px) {
+  .gossips {
+    left: 70px;
+    width: 50%;
+  }
+}
+
+.gossip__item {
+  background: #1282A2;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  text-align: center;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 480px) {
+  .gossip__item {
+    width: 90%;
+  }
 }
